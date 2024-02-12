@@ -1,0 +1,185 @@
+@media screen and (min-width: 600px) and (max-width: 999px) {
+
+    .container{
+        height: 200px;
+    
+        .left{
+    
+            .glow{
+    
+                h2{
+                    font-size: 1.2rem;  
+                    line-height: 1.6rem;  
+                }
+            }
+    
+            .glow2{
+                
+                h4{
+                    font-size: .6rem;
+                }
+                h5{
+                    font-size: .6rem;
+                }
+                h6{
+                    font-size: .6rem;
+                }
+    
+                .cta {
+                    p {
+                        font-size: .6rem;
+                    }
+                }
+    
+            }
+        }
+    
+        .car{
+            position: absolute;
+            bottom: .8rem;
+            right: 3.7%;
+            height: 150px;
+            width: 300px;
+        }
+    
+        .right{
+            width: 45%;
+            position: relative;
+    
+            .btns{
+                width: 60%;
+                margin-top: 10.2rem;
+                
+    
+                .box{
+                    width: 20px;
+                    height: 20px;
+                }
+    
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1363px) {
+
+    .container{
+        height: 220px;
+    
+        .left{
+    
+            .glow{
+    
+                h2{
+                    font-size: 1.5rem;  
+                    line-height: 1.8rem;  
+                }
+            }
+    
+            .glow2{
+                
+                h4{
+                    font-size: .8rem;
+                }
+                h5{
+                    font-size: .8rem;
+                }
+                h6{
+                    font-size: .8rem;
+                }
+    
+                .cta {
+                    p {
+                        font-size: .8rem;
+                    }
+                }
+    
+            }
+        }
+    
+        .car{
+            position: absolute;
+            bottom: .5rem;
+            right: 3.7%;
+            height: 200px;
+            width: 380px;
+        }
+    
+        .right{
+            width: 45%;
+            position: relative;
+    
+            .btns{
+                width: 60%;
+                margin-top: 11.3rem;
+                
+    
+                .box{
+                    width: 30px;
+                    height: 30px;
+                }
+    
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1364px) and (max-width: 1500px) {
+
+    .container{
+        height: 300px;
+    
+        .left{
+    
+            .glow{
+    
+                h2{
+                    font-size: 2rem;  
+                    line-height: 2.5rem;  
+                }
+            }
+    
+            .glow2{
+                
+                h4{
+                    font-size: 1.2rem;
+                }
+                h5{
+                    font-size: 1.1rem;
+                }
+                h6{
+                    font-size: 1rem;
+                }
+    
+                .cta {
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+    
+            }
+        }
+    
+        .car{
+            bottom: .5rem;
+            right: 5%;
+            height: 270px;
+            width: 450px;
+        }
+    
+        .right{
+    
+            .btns{
+                width: 55%;
+                margin-top: 14rem;
+                
+    
+                .box{
+                    width: 30px;
+                    height: 30px;
+                }
+    
+            }
+        }
+    }
+}

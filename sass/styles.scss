@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$anton: 'Anton', sans-serif;
+$bun: 'Bungee', sans-serif;
+
+$color1: orange;
+$color2: aqua;
+$color3: rgb(98, 255, 0);
+
+body{
+    background: #ccccccf5;
+    font-family: $bun;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    height: 300px;
+    background-image: url(../images/b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .left{
+        width: 55%;
+        color: white;
+        display: flex;
+
+        .glow{
+            width: 45%;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2{
+                text-align: center;
+                font-size: 2rem;  
+                line-height: 2.6rem;      
+                font-weight: bold; /* Adjust font weight as needed */
+                color: #ffffff; /* Text color */
+                animation: glowAnimation 3s infinite alternate;
+            }
+        }
+
+        @keyframes glowAnimation {
+            0% {
+                text-shadow: 0 0 10px $color1, /* Adjust the color and size of the glow */
+                0 0 20px $color1,
+                0 0 30px $color1,
+                0 0 40px $color1,
+                0 0 50px $color1,
+                0 0 75px $color1,
+                0 0 100px $color1,
+                0 0 150px $color1;
+            }
+            50% {
+                text-shadow: 0 0 10px $color2, /* Adjust the color and size of the glow */
+                0 0 20px $color2,
+                0 0 30px $color2,
+                0 0 40px $color2,
+                0 0 50px $color2,
+                0 0 75px $color2,
+                0 0 100px $color2,
+                0 0 150px $color2;
+            }
+            100% {
+                text-shadow: 0 0 10px $color3, /* Adjust the color and size of the glow */
+                0 0 20px $color3,
+                0 0 30px $color3,
+                0 0 40px $color3,
+                0 0 50px $color3,
+                0 0 75px $color3,
+                0 0 100px $color3,
+                0 0 150px $color3;
+            }
+        }
+
+        .glow2{
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 1px;
+            
+            h4{
+                font-size: 1.3rem;
+                color: rgba(0, 255, 255, 0.852);
+            }
+            h5{
+                font-size: 1.2rem;
+                opacity: .9;
+            }
+            h6{
+                font-size: 1.1rem;
+                opacity: .9;
+            }
+
+            .cta {
+                p {
+                    font-size: 1.2rem;
+                    color: orange;
+                    animation: shakeAnimation .6s infinite;
+                }
+            }
+
+            @keyframes shakeAnimation {
+                0% { transform: translateX(0); }
+                25% { transform: translateX(-2px); }
+                50% { transform: translateX(0); }
+                75% { transform: translateX(2px); }
+                100% { transform: translateX(0); }
+            }
+        }
+    }
+
+    .car{
+        position: absolute;
+        bottom: 0rem;
+        right: 6%;
+        height: 300px;
+        width: 500px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+    }
+
+    .right{
+        width: 45%;
+        position: relative;
+
+        .btns{
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 14rem;
+            
+
+            .box{
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+            }
+
+            .one{
+                background: orange;
+            }
+            .two{
+                background: rgb(0, 208, 255);
+            }
+            .three{
+                background: black;
+                border: 1px solid yellow;
+            }
+            .four{
+                background: rgb(229, 225, 225);
+            }
+        }
+    }
+}
+@import 'laptops';
+@import 'mobile';

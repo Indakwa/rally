@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bungee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(204, 204, 204, 0.9607843137);
+  font-family: "Bungee", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  height: 300px;
+  background-image: url(../images/b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .left {
+  width: 55%;
+  color: white;
+  display: flex;
+}
+.container .left .glow {
+  width: 45%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .left .glow h2 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  font-weight: bold; /* Adjust font weight as needed */
+  color: #ffffff; /* Text color */
+  animation: glowAnimation 3s infinite alternate;
+}
+@keyframes glowAnimation {
+  0% {
+    text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 75px orange, 0 0 100px orange, 0 0 150px orange;
+  }
+  50% {
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 50px aqua, 0 0 75px aqua, 0 0 100px aqua, 0 0 150px aqua;
+  }
+  100% {
+    text-shadow: 0 0 10px rgb(98, 255, 0), 0 0 20px rgb(98, 255, 0), 0 0 30px rgb(98, 255, 0), 0 0 40px rgb(98, 255, 0), 0 0 50px rgb(98, 255, 0), 0 0 75px rgb(98, 255, 0), 0 0 100px rgb(98, 255, 0), 0 0 150px rgb(98, 255, 0);
+  }
+}
+.container .left .glow2 {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.container .left .glow2 h4 {
+  font-size: 1.3rem;
+  color: rgba(0, 255, 255, 0.852);
+}
+.container .left .glow2 h5 {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+.container .left .glow2 h6 {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+.container .left .glow2 .cta p {
+  font-size: 1.2rem;
+  color: orange;
+  animation: shakeAnimation 0.6s infinite;
+}
+@keyframes shakeAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.container .car {
+  position: absolute;
+  bottom: 0rem;
+  right: 6%;
+  height: 300px;
+  width: 500px;
+}
+.container .car img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .right {
+  width: 45%;
+  position: relative;
+}
+.container .right .btns {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14rem;
+}
+.container .right .btns .box {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.container .right .btns .one {
+  background: orange;
+}
+.container .right .btns .two {
+  background: rgb(0, 208, 255);
+}
+.container .right .btns .three {
+  background: black;
+  border: 1px solid yellow;
+}
+.container .right .btns .four {
+  background: rgb(229, 225, 225);
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .container {
+    height: 200px;
+  }
+  .container .left .glow h2 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .container .left .glow2 h4 {
+    font-size: 0.6rem;
+  }
+  .container .left .glow2 h5 {
+    font-size: 0.6rem;
+  }
+  .container .left .glow2 h6 {
+    font-size: 0.6rem;
+  }
+  .container .left .glow2 .cta p {
+    font-size: 0.6rem;
+  }
+  .container .car {
+    position: absolute;
+    bottom: 0.8rem;
+    right: 3.7%;
+    height: 150px;
+    width: 300px;
+  }
+  .container .right {
+    width: 45%;
+    position: relative;
+  }
+  .container .right .btns {
+    width: 60%;
+    margin-top: 10.2rem;
+  }
+  .container .right .btns .box {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1363px) {
+  .container {
+    height: 220px;
+  }
+  .container .left .glow h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .container .left .glow2 h4 {
+    font-size: 0.8rem;
+  }
+  .container .left .glow2 h5 {
+    font-size: 0.8rem;
+  }
+  .container .left .glow2 h6 {
+    font-size: 0.8rem;
+  }
+  .container .left .glow2 .cta p {
+    font-size: 0.8rem;
+  }
+  .container .car {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 3.7%;
+    height: 200px;
+    width: 380px;
+  }
+  .container .right {
+    width: 45%;
+    position: relative;
+  }
+  .container .right .btns {
+    width: 60%;
+    margin-top: 11.3rem;
+  }
+  .container .right .btns .box {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 1364px) and (max-width: 1500px) {
+  .container {
+    height: 300px;
+  }
+  .container .left .glow h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .container .left .glow2 h4 {
+    font-size: 1.2rem;
+  }
+  .container .left .glow2 h5 {
+    font-size: 1.1rem;
+  }
+  .container .left .glow2 h6 {
+    font-size: 1rem;
+  }
+  .container .left .glow2 .cta p {
+    font-size: 1rem;
+  }
+  .container .car {
+    bottom: 0.5rem;
+    right: 5%;
+    height: 270px;
+    width: 450px;
+  }
+  .container .right .btns {
+    width: 55%;
+    margin-top: 14rem;
+  }
+  .container .right .btns .box {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+  .container .left {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .left .glow {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .left .glow h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    font-weight: bold; /* Adjust font weight as needed */
+    color: #ffffff; /* Text color */
+    animation: glowAnimation 3s infinite alternate;
+    margin-top: 0.5rem;
+  }
+  .container .left .glow2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+  .container .left .glow2 h4 {
+    font-size: 0.9rem;
+  }
+  .container .left .glow2 h5 {
+    font-size: 0.9rem;
+  }
+  .container .left .glow2 h6 {
+    font-size: 0.9rem;
+  }
+  .container .left .glow2 .cta p {
+    font-size: 0.9rem;
+    color: orange;
+    animation: shakeAnimation 0.6s infinite;
+  }
+  .container .car {
+    position: absolute;
+    bottom: 0rem;
+    right: 6%;
+    height: 180px;
+    width: 200px;
+  }
+  .container .car img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .container .right {
+    width: 100%;
+    position: relative;
+  }
+  .container .right .btns {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .container .right .btns .box {
+    width: 30px;
+    height: 30px;
+  }
+}/*# sourceMappingURL=styles.css.map */
